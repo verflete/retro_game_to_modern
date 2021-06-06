@@ -67,6 +67,12 @@ python train.py --dataroot ./datasets/retroGameToModern/ --name retro_to_modern 
 График обучения:
 ![График обучения](images/trainingplot.png)
 
+Команда для тестирования нейросети:
+
+```
+python test.py --dataroot datasets/retroGameToModern/testA --name retro_to_modern_latest --model test --no_dropout
+```
+
 Далее в таблице представлены несколько изображений из тестовой выборке обработанные нейросетью на разных эпохах обучения.
 
  | |  |  |  |  |  | | | |
@@ -81,4 +87,8 @@ python train.py --dataroot ./datasets/retroGameToModern/ --name retro_to_modern 
  175 | ![](images/test/175/1_4_fake.png) | ![](images/test/175/1_47_fake.png) | ![](images/test/175/1_58_fake.png) | ![](images/test/175/1_76_fake.png) | ![](images/test/175/2_24_fake.png) | ![](images/test/175/2_44_fake.png) | ![](images/test/175/6_244_fake.png) | ![](images/test/175/7_46_fake.png)
  200 | ![](images/test/200/1_4_fake.png) | ![](images/test/200/1_47_fake.png) | ![](images/test/200/1_58_fake.png) | ![](images/test/200/1_76_fake.png) | ![](images/test/200/2_24_fake.png) | ![](images/test/200/2_44_fake.png) | ![](images/test/200/6_244_fake.png) | ![](images/test/200/7_46_fake.png)
 
- 
+ В итоге на 100 эпохе обучения нейросеть показывает лучшее качество.
+
+Original | Processed
+------------ | -------------
+![original](images/original.gif)| ![original](images/processed.gif)
