@@ -89,6 +89,6 @@ python test.py --dataroot datasets/retroGameToModern/testA --name retro_to_moder
 
  В итоге на 100 эпохе обучения нейросеть показывает лучшее качество.
 
-Original | Processed
+Оригинал F3 | Обработанный F3 на 100-й эпохе
 ------------ | -------------
 ![original](images/original.gif)| ![original](images/processed.gif)
